@@ -125,7 +125,7 @@ public class 비교연산자 {
 		 * 	contains() => 단어 포함 => 검색
 		 * 	----------
 		 * 	startsWith() => 시작 문자열 같은 경우
-		 * 	endsWuth() => 파일 확장자 .jpg
+		 * 	endsWith() => 파일 확장자 .jpg
 		 * 	------------ 서제스트 
 		 * 
 		 * 	System / String / Math ...
