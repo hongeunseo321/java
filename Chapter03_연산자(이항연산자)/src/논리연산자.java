@@ -67,7 +67,7 @@ public class 논리연산자 {
 //		System.out.println("c="+c);
 //		if(c>='A' && c<='Z')
 //			System.out.println("대문자입니다");
-//		else if(c>='a' && c<='z')
+//		else if(c>='a' && c<='z') 
 //			System.out.println("소문자입니다");
 //		else
 //			System.out.println("알파벳이 아닙니다");
