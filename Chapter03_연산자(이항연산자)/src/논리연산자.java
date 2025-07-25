@@ -15,13 +15,13 @@
  *    ------------------------------
  *    	(조건)(조건)	&&(직렬) ||(병렬)
  *    ------------------------------
- *    	true  true	 true	 true
+ *    	true  true   true    true
  *    ------------------------------
- *    	true  false	 false	 true
+ *    	true  false  false   true
  *    ------------------------------
- *    	false true	 false	 true
+ *    	false true   false   true
  *    ------------------------------
- *    	false false	 false	 false
+ *    	false false  false   false
  *    ------------------------------
  *    	효율적인 조건 검색 => 속도를 최적화
  *    	=> 앞에 있는 조건이 true ==> ||은 뒤에 있는 조건을 수행하지 않는다
