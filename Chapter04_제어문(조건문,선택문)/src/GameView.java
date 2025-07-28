@@ -1,4 +1,4 @@
-import javax.swing.*;// 경량 
+import javax.swing.*; // 경량
 import java.awt.*; // Image 
 public class GameView extends JPanel{
     Image back,air;

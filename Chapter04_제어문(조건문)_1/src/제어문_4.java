@@ -1,4 +1,4 @@
-// => 입력을 받아서 => 로그린 처리
+// => 입력을 받아서 => 로그인 처리
 // id, pwd => 오라클에서 처리
 import java.util.Scanner;
 // if~else : 114page
@@ -16,7 +16,7 @@ public class 제어문_4 {
 		System.out.print("아이디 입력:");
 		String id=scan.next();
 		
-		System.out.print("비밀번로 입력:");
+		System.out.print("비밀번호 입력:");
 		String pwd=scan.next();
 		
 		/*

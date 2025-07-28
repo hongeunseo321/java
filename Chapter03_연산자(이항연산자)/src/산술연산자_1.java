@@ -328,7 +328,7 @@ public class 산술연산자_1 {
 		String num1=JOptionPane.showInputDialog("첫번째 정수 입력:");
 		String num2=JOptionPane.showInputDialog("두번째 정수 입력:");
 		
-		//정수로 변경
+		// 정수로 변경
 		int n1=Integer.parseInt(num1);
 		int n2=Integer.parseInt(num2);
 		

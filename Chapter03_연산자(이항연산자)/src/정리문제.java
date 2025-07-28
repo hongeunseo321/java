@@ -6,7 +6,7 @@
 3) char 안녕; => 한글/알파벳으로 시작 
 4) double 1var; => 숫자는 사용이 가능 (단 앞에 사용금지)
 5) char student_ID;
-6) final int abcdefghijklmnopqrstuvwxyz;//문자의 길이를 제한하지 않는다
+6) final int abcdefghijklmnopqrstuvwxyz; // 문자의 길이를 제한하지 않는다
 ==> 2,4
 
 2. 다음 각 항목이 나타내는 변수를 선언하라.
@@ -45,8 +45,8 @@
         (-128~127)     (16bit)    정수 default
         => 네트워크 전송 -32768~32767   |
         => 웹 전송      => C언어 호환  컴퓨터 인식
-           파일업로드 
-           파일다운로드 
+           파일 업로드 
+           파일 다운로드 
         암호화 (RAS,DES)
                       *** int / long => L(l)
    -------------------------------------
@@ -56,7 +56,7 @@
                              float / double => f(F)               
    -------------------------------------
     문자            char (0~65535) 
-                   멀티바이트 : 각언어를 사용할 수 있다 
+                   멀티바이트 : 각 언어를 사용할 수 있다 
                    -------- Unicode 
                    -------- 모든 운영체제에 호환 
    -------------------------------------
@@ -111,7 +111,7 @@ e. i = (int) ch;
 8. 다음 중 변수를 잘못 초기화한 것은? (모두 고르시오) a,c,d
 a. byte b = 256; // 범위 초과 => 127
 b. char c = ' '; ''오류
-c. char answer = 'no'; // 한글자
+c. char answer = 'no'; // 한 글자
 d. float f = 3.14; // double 
 e. double d = 1.4e3f;
 
@@ -120,11 +120,11 @@ public class 정리문제 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        //int i=10;
-        //byte b=(byte)i;
+        // int i=10;
+        // byte b=(byte)i;
 		byte b=10;
 		char c='A';
-		//c=b; 
+		// c=b; 
 		// char c=65
 		char cc=' ';
 	}

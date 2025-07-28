@@ -1,6 +1,6 @@
 /* 
  * 	! => 부정
- * 	-- 결과값 : booleab
+ * 	-- 결과값 : boolean
  * 	
  * 	!true => false
  * 	!false => true

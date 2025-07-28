@@ -52,32 +52,32 @@ public class 제어문_조건문1 {
 		if(result==0)
 			System.out.println("비겼다!!");
 		
-//		if(com==0) //가위 com-user
+//		if(com==0) // 가위 com-user
 //		{
-//			if(user==0) //0
+//			if(user==0) 0
 //				System.out.println("비겼다");
-//			if(user==1) //-1
+//			if(user==1) -1
 //				System.out.println("User Win!!");
-//			if(user==2) //-2
+//			if(user==2) -2
 //				System.out.println("Compute Win!!");
 //			
 //		}
-//		if(com==1) //바위
+//		if(com==1) // 바위
 //		{
-//			if(user==0) //1
+//			if(user==0) 1
 //				System.out.println("Compute Win!!");
-//			if(user==1) //0
+//			if(user==1) 0
 //				System.out.println("비겼다");
-//			if(user==2) //-1
+//			if(user==2) -1
 //				System.out.println("User Win!!");
 //		}
-//		if(com==2) //보
+//		if(com==2) // 보
 //		{
-//			if(user==0) //2
+//			if(user==0) 2
 //				System.out.println("User Win!!");
-//			if(user==1) //1
+//			if(user==1) 1
 //				System.out.println("Compute Win!!");
-//			if(user==2) //0
+//			if(user==2) 0
 //				System.out.println("비겼다");
 //		}
 	}
