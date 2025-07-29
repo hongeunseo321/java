@@ -22,7 +22,7 @@ public class 문제7 {
 //		
 //		System.out.println(arr[6]);
 //		System.out.println(arr[7]);
-//		System.out.println(arr[8]);
+//		System.out.println(arr[8]);   
 //		
 //		for(int i=0;i<9;i++)
 //		{
