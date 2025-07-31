@@ -1,6 +1,6 @@
 // 종료 시점
 import java.util.Scanner;
-public class 제어문_9 {
+public class 제어문_09 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

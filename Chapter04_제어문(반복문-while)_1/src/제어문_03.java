@@ -1,7 +1,7 @@
 // while 사용
 import java.io.FileReader;
 
-public class 제어문_3 {
+public class 제어문_03 {
 
 	public static void main(String[] args) 
 			throws Exception

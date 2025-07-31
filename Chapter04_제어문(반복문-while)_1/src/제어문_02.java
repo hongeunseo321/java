@@ -1,5 +1,5 @@
 // => 1~100 => 3, 5, 7 => 가장 큰 배수, 가장 작은 배수
-public class 제어문_2 {
+public class 제어문_02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,7 +1,7 @@
 // 계산기 => 종료 전까지
 import java.util.Scanner;
 // while = 1차
-public class 제어문_6 {
+public class 제어문_06 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

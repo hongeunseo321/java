@@ -30,7 +30,7 @@
  *                       -------- 이미 증가된 값으로 비교해서 종료
  *  
  */
-public class 제어문_8 {
+public class 제어문_08 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

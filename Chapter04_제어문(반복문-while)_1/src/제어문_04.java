@@ -1,6 +1,6 @@
 // 반복문 => if / if~else / switch
 import java.util.Scanner;
-public class 제어문_4 {
+public class 제어문_04 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

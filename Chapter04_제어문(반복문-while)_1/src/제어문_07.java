@@ -22,7 +22,7 @@
  *  		증감식 3
  *  	}while(조건식); 4
  */
-public class 제어문_7 {
+public class 제어문_07 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

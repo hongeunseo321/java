@@ -13,7 +13,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-public class 제어문_5 {
+public class 제어문_05 {
 
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub;

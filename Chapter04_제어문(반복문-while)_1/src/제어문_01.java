@@ -31,7 +31,7 @@
  *		=> while => 고유 기능
  *			=> 웹, 파일
  */
-public class 제어문_1 {
+public class 제어문_01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
