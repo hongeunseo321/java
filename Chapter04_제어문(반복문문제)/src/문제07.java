@@ -7,7 +7,7 @@ public class 문제07 {
 		int sum=0;
 		for(int i=5;i<=16;i++)
 		{
-			sum+=i;
+			sum+=i; // 누적 연산
 		}
 		System.out.println("5~16까지의 합:"+sum);
 	}

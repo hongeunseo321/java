@@ -15,14 +15,15 @@ public class 문제06 {
 		
 		for(;;)
 		{
-			System.out.print("첫 번째 정수 입력:");
+			System.out.print("시작 정수 입력:");
 			start=scan.nextInt();
-			System.out.print("두 번째 정수 입력:");
+			System.out.print("끝 정수 입력:");
 			end=scan.nextInt();
 			if(start<=end)
 			{
 				break;
 			}
+			System.out.println("시작 값은 끝 값보다 작거나 같아야 합니다");
 		}
 		for(int i=start;i<=end;i++)
 		{
