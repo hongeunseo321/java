@@ -30,7 +30,7 @@
  *         	toLowerCase() => 소문자 출력
  *         	=> 원형 : String toUpperCase()
  *                   String toLowerCase()
- *          *** 원본은 바뀌지 않는다
+ *          
  *          
  *      3) 문자열 제어
  *      	substring() => 원하는 문자열을 자르는 경우 사용
@@ -44,6 +44,7 @@
  *                    
  * 		*** 메소드는 같은 이름으로 제작할 수 없다
  * 		*** 예외 조건 : 매개변수의 개수나 데이터형이 다르면 다른 메소드로 인식 => 오버로딩
+ * 		*** 출력만 할 때에는 원본은 바뀌지 않는다
  */
 public /* final */ class 정리_8 {
 
@@ -57,6 +58,15 @@ public /* final */ class 정리_8 {
 //		// 원본은 변경되지 않는다
 //		System.out.println(s1);
 		
+		int a=10;
+		a=30;
+		String s="0123456789";
+		System.out.println(s.substring(5)); // 56789
+		s=s.substring(5,9); // 5678
+		s="aaaaaa";
+		s="bbbbbb";
+		System.out.println(s);
+		System.out.println(s);
 	}
 
 }
