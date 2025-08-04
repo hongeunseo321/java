@@ -26,7 +26,7 @@ public class 배열_10 {
 //					{
 //						bCheck=false;
 //						break;
-//					} => 넣으면 안 되는 문장
+//					} => 중복이 아닌 값 하나만 봤다고 바로 통과시키는 문장
 				}
 			}
 			lotto[i]=su;
