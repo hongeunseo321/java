@@ -70,7 +70,7 @@ package com.sist.exception;
  *                 ---------------------------
  *                 |                         |
  *            IOException             RuntimeException
- *             입출력관련                실행 시 에러
+ *             입출력 관련               실행 시 에러
  *            => System.in                   |
  *               예외처리 필수           NumberFormatException
  *            => System.out           문자열 => 정수형 변환이 안 되는 경우 
