@@ -16,6 +16,8 @@ public class 라이브러리_4 extends JFrame implements ItemListener{
 		add("North",box);
 		setSize(350, 300);
 		setVisible(true);
+		box.addItemListener(this);
+//		box.setFocusable(true);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,7 +26,11 @@ public class 라이브러리_4 extends JFrame implements ItemListener{
 	@Override
 	public void itemStateChanged(ItemEvent e) {
 		// TODO Auto-generated method stub
-		
+		if(e.getSource()==box)
+		{
+			String s=box.getSelectedItem().toString();
+			System.out.println(s);
+		}
 	}
 
 }
