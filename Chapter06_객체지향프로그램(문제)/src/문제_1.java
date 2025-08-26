@@ -80,39 +80,42 @@
 	 패스워드	         password	 문자열 
 	 나이	             age	     정수 
 	
-	=> 	package ch06.test;
-
-		public class Member {
-	    String name;
+	=> 	String name;
 	    String id;
 	    String password;
 	    int age;
-	
-		    }
-		}
 
 12. 위에서 작성한 Member 클래스에 생성자를 추가하려고 합니다. 
 	다음과 같이 Member 객체를 생성할 때 name 필드와 id 필드를 
 	외부에서 받은 값으로 초기화하려면 생성자를 어떻게 선언해야 합니까?
 	=> 캡슐화로 만든다
 	
-	=> package ch06.test;
-
-		public class Member {
-		    String name;
-		    String id;
-		    String password;
-		    int age;
-		
-		    Member(String name,String id){
-		        this.name = name;
-		        this.id = id;
-		    }
-		 }
+	=> Member user1 = new Member("홍길동", "hong");
+	   Member user2 = new Member("강자바", "java");
+	   Member (String name, String id) {
+	   this.name=name;
+	   this.id=id;
+	   }
+	   
+	   설명)
+	   		생성자 만들기
+	   		클래스 이름 (매개변수...) {
+	   			this.name=매개변수 값;
+	   		}
 	
 	다음과 같은 멤버변수를 갖는 SutdaCard 클래스를 정의하시오.
 	int num 카드의 숫자 (1~10 사이의 정수)
 	boolean isKwang 광이면 true, 아니면 false
+	
+	=> class SutdaCard
+	   {
+       	 int num;
+         boolean isKwang;
+         public SutdaCard() 
+         {
+            num = (int)(Math.random()*10)+1;
+         }
+       }
 	
 	다음과 같은 멤버변수를 갖는 Sutdent 클래스를 정의하시오.
 	String name 학생이름
@@ -122,61 +125,96 @@
 	int eng 영어점수
 	int math 수학점수
 	
-13. 다음의 코드에 정의된 변수들을 종류별로 구분해서 적으시오.
-	class PlayingCard { 
-	int kind; 
-	int num; 
-	static int width; 
-	static int height; 
-	PlayingCard(int k, int n) { 
-	kind = k; 
-	num = n; 
+	=> class Student
+	   {
+          String name;
+          int ban, no;
+          int kor, eng, math;
+       }
 	
+13. 다음의 코드에 정의된 변수들을 종류별로 구분해서 적으시오.
+	class PlayingCard 
+	{ 
+	   int kind; 
+	   int num;
+	    
+	   static int width; 
+	   static int height; 
+	   
+	   PlayingCard(int k, int n) 
+	   { 
+	      kind = k; 
+	      num = n; 
+	   }
+	   pubic static void main(String args[])
+	   {
+	      playingCard card=new playingCard(1,1);
+	   }
 	} 
-	인스턴스변수 :
-	정적변수(공유변수) :
-	지역변수 :
+	
+	클래스변수(static변수) : width, height
+	인스턴스변수 : kind, num
+	지역변수 : k, n, card
+	
+	해설)
+		변수가 선언된 위치를 보면 변수의 종류를 알 수 있다.
+		클래스 블록{}내에서 선언된 변수는 인스턴스 변수,
+		static이 붙은 것은 static변수(클래스변수)이다.
+		그리고 나머지는 모두 지역변수이다.
 
-14. 다음 중 생성자에 대한 설명으로 옳지 않은 것은? (모두 고르시오) 	
+14. 다음 중 생성자에 대한 설명으로 옳지 않은 것은? (모두 고르시오) b c	
 	 a. 모든 생성자의 이름은 클래스의 이름과 동일해야한다.
 	 b. 생성자는 객체를 생성하기 위한 것이다.
 	 c. 클래스에는 생성자가 반드시 하나 이상 있어야 한다.
 	 d. 생성자가 없는 클래스는 컴파일러가 기본 생성자를 추가한다.
 	 e. 생성자는 오버로딩 할 수 없다.
+	 
+	 => 생성자 사용 목적은 객체 초기화에 있다. 
+	    객체 생성은 new 연산자 담당이다.
 
-15. 다음 중 초기화에 대한 설명으로 옳지 않은 것은? (모두 고르시오)
+15. 다음 중 초기화에 대한 설명으로 옳지 않은 것은? (모두 고르시오) c e
 	a. 멤버변수는 자동 초기화되므로 초기화하지 않고도 값을 참고할 수 있다.
 	b. 지역변수는 사용하기 전에 반드시 초기화해야 한다.
 	c. 초기화 블럭보다 생성자가 먼저 수행된다.
 	d. 명시적 초기화를 제일 우선적으로 고려해야 한다.
 	e. 클래스변수보다 인스턴스변수가 먼저 초기화된다.
 	
-16. 다음 중 인스턴스변수의 초기화 순서가 올바른 것은?	
+	=> JVM초기화, 명시적초기화, static초기화블록, 인스턴스초기화블록, 생성자 순
+	*** 명시적 초기화를 제일 우선적으로 고려해야 한다.
+	
+16. 다음 중 인스턴스변수의 초기화 순서가 올바른 것은? a
 	a. 기본값-명시적초기화-초기화블럭-생성자
 	b. 기본값-명시적초기화-생성자-초기화블럭
 	c. 기본값-초기화블럭-명시적초기화-생성자
 	d. 기본값-초기화블럭-생성자-명시적초기화
 
-17. 다음 중 지역변수에 대한 설명으로 옳지 않은 것은? (모두 고르시오)
+17. 다음 중 지역변수에 대한 설명으로 옳지 않은 것은? (모두 고르시오) a e
 	a. 자동 초기화되므로 별도의 초기화가 필요없다.
 	b. 지역변수가 선언된 메서드가 종료되면 지역변수도 함께 소멸된다.
 	c. 메서드의 매개변수로 선언된 변수도 지역변수이다.
 	d. 클래스변수나 인스턴스변수보다 메모리 부담이 적다.
 	e. 힙(heap)영역에 생성되며 가비지 컬렉터에 의해 소멸된다.
 	
+	=> 지역변수는 호출스택(call stack)에 생성된다. 
+	   힙(heap)영역에는 인스턴스변수가 생성된다.
+	   지역변수가 선언된 메소드가 종료되면 지역변수도 함께 소멸된다.
+	    즉 클래스변수나 인스턴스변수보다 메모리 부담이 적다.
+	
 18. 다음 중 접근제어자를 접근범위가 넓은 것에서 좁은 것의 순으로 바르게 나열한 것은?
 	a. public-protected-(default)-private
 	b. public-(default)-protected-private
 	c. (default)-public-protected-private
 	d. private-protected-(default)-public
+	
+	=> public > protected > (default) > private
 
 19. 접근 제어자가 사용될 수 있는 곳 - 클래스, 멤버변수, 메서드, 생성자
-	(     ) - 같은 클래스 내에서만 접근이 가능하다.
-	(     ) - 같은 패키지 내에서만 접근이 가능하다.
-	(     ) - 같은 패키지 내에서, 그리고 다른 패키지의 자손클래스에서 접근이 가능하다.
-	(     ) - 접근 제한이 전혀 없다.
+	(default) - 같은 클래스 내에서만 접근이 가능하다.
+	(private) - 같은 패키지 내에서만 접근이 가능하다.
+	(protected) - 같은 패키지 내에서, 그리고 다른 패키지의 자손클래스에서 접근이 가능하다.
+	(public) - 접근 제한이 전혀 없다.
 
-20. 다음 중 접근 제어자에 대한 설명으로 옳지 않은 것은? (모두 고르시오)
+20. 다음 중 접근 제어자에 대한 설명으로 옳지 않은 것은? (모두 고르시오) c
 	a. public은 접근제한이 전혀 없는 접근 제어자이다.
 	b. (default)가 붙으면, 같은 패키지 내에서만 접근이 가능하다.
 	c. 지역변수에도 접근 제어자를 사용할 수 있다.
