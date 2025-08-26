@@ -10,7 +10,7 @@ package com.sist.set;
  *   
  *	1) 특징 
  *		= 순서 X (인덱스 번호 X)
- *         일반 for문 X => forEach, Iternater
+ *         일반 for문 X => forEach, Iterator
  *      = 데이터 중복 허용 X
  *      = 주 사용처 => ArrayList에 있는 중복 데이터 제거
  *      = 구현된 클래스
