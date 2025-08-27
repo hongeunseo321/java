@@ -63,7 +63,7 @@ package com.sist.io;
  *  파일 복사 (업로드, 다운로드)
  */
 import java.io.*; // 반드시 예외처리
-public class 입출력_1 {
+public class 입출력_01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
