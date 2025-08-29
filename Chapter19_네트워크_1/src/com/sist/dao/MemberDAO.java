@@ -123,14 +123,14 @@ public class MemberDAO {
 	  MemberVO vo=new MemberVO();
 	  try
 	  {
-		  //1. 연결 
+		  // 1. 연결 
 		  getConnection();
-		  //2. SQL문장 
+		  // 2. SQL문장 
 		  String sql="SELECT COUNT(*) FROM member "
 				    +"WHERE id=?";
-		  //3. 결과값 받기 
+		  // 3. 결과값 받기 
 		  ps=conn.prepareStatement(sql);
-		  //4. ?가 있는 경우에는 반드시 ?에 값을 채운다 
+		  // 4. ?가 있는 경우에는 반드시 ?에 값을 채운다 
 		  ps.setString(1, id);
 		  ResultSet rs=ps.executeQuery();
 		  rs.next();

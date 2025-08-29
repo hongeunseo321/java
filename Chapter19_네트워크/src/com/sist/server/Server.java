@@ -37,7 +37,7 @@ import java.net.*;
 public class Server implements Runnable{
 	// 접속을 담당하는 소켓 생성
 	private ServerSocket ss;
-	private final int PORT=3355;
+	private final int PORT=13579;
 	
 	// 저장 공간
 	private Vector<Client> waitVc=new Vector<Client>();
