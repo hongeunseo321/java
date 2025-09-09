@@ -10,6 +10,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.table.DefaultTableModel;
+
 public class ChatForm extends JPanel {
 	JButton info,post;
 	JTextArea textArea;
@@ -46,7 +47,10 @@ public class ChatForm extends JPanel {
 		add(js1);
 //		post.setBounds(770, 560, 150, 30);
 //		info.setBounds(960, 560, 150, 30);
+
 		chatField.setBounds(30, 560, 600, 30);
+		chatField.setBounds(30, 660, 600, 30);
+		chatField.setBounds(30, 660, 600, 30);
 		add(chatField);
 //		add(post);
 //		add(info);

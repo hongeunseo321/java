@@ -13,9 +13,10 @@ public class Login extends JFrame {
         setTitle("Login");
         setSize(253, 175); 
         setLayout(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE); // EXIT_ON_CLOSE면 로그인 창 닫았을 시 메인창도 같이 꺼짐
         setLocationRelativeTo(null); 
 
+        
         
         la1 = new JLabel("ID", JLabel.CENTER);
         la2 = new JLabel("PW", JLabel.CENTER);
