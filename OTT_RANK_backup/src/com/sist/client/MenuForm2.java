@@ -21,3 +21,4 @@ public class MenuForm2 extends JPanel{
 	}
 	
 }
+

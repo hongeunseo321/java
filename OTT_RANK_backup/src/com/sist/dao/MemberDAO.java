@@ -18,6 +18,7 @@ import java.util.List;
  * ADDR1     NOT NULL VARCHAR2(300) 
  * ADDR2              VARCHAR2(200) 
  * PHONE              VARCHAR2(13)  
+ * NAME 	 NOT NULL VARCHAR2(15)
  * 
  * 
  * 
@@ -25,6 +26,8 @@ import java.util.List;
 import com.sist.vo.MemberVO;
 public class MemberDAO{
 	private static MemberDAO dao;
+	Connection conn;
+	PreparedStatement ps;
 	DAOdefault db=new DAOdefault();
 	public static MemberDAO newInstance()
 	{
@@ -35,13 +38,11 @@ public class MemberDAO{
 	public List<MemberVO> memberAlldata()
 	{
 		List<MemberVO> list=new ArrayList<MemberVO>();
-		Connection conn=null;
-		PreparedStatement ps=null;
+
 		try
 		{
-			db.getConnection();
-			conn=db.getConn();
-			String sql="SELECT Id_num,Login_id,Login_pwd,nickname,sex,post,addr1,NVL(addr2,' '),phone FROM 회원목록";
+			conn=db.getConnection(conn);
+			String sql="SELECT 회원목록.Id_num,Login_id,Login_pwd,nickname,sex,post,addr1,NVL(addr2,' '),phone,name,NVL(TO_CHAR(enddate,'YYYY-MM-DD'),' ') as bandate FROM 회원목록,banlist WHERE 회원목록.id_num=banlist.id_num(+)";
 			ps=conn.prepareStatement(sql);
 			ResultSet rs=ps.executeQuery();
 			while(rs.next())
@@ -56,6 +57,8 @@ public class MemberDAO{
 				vo.setAddr1(rs.getString(7));
 				vo.setAddr2(rs.getString(8));
 				vo.setPhone(rs.getString(9));
+				vo.setName(rs.getString(10));
+				vo.setBandate(rs.getString(11));
 				list.add(vo);
 			}
 		}catch(Exception ex)
@@ -64,7 +67,7 @@ public class MemberDAO{
 		}
 		finally
 		{
-			db.disConnection();
+			db.disConnection(conn,ps);
 		}
 		return list;
 	}

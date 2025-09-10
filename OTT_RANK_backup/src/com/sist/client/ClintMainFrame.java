@@ -1,11 +1,8 @@
 package com.sist.client;
 
-// 이벤트 처리 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JFrame;
-import javax.swing.UIManager;
+import javax.swing.*;
+import java.awt.*; // 배치 => 레이아웃
+import java.awt.event.*; // 이벤트 처리 
 
 public class ClintMainFrame extends JFrame
 implements ActionListener
@@ -46,7 +43,6 @@ implements ActionListener
 		
 		// 상단버튼 클릭 이벤트 등록 => 누르면 actionPerformed의 내용이 실행됨 조건에 따라
 		menu2.b5.addActionListener(this);
-		menu2.b8.addActionListener(this);
 	}
 
 	// 파일에서 실행시키는 부분인 main
@@ -87,9 +83,5 @@ implements ActionListener
 		{
 			new Login().setVisible(true); //로그인은 JFrame라서 일단 이렇게 넣었음
 		}
-		else if (e.getSource()== menu2.b8)
-		{
-	        cp.card.show(cp, "MM"); // 회원관리 폼
-	    }
 	}
 }
